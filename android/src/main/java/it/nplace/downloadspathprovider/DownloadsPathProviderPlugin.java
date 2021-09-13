@@ -16,12 +16,12 @@ import io.flutter.embedding.engine.plugins.FlutterPlugin;
 public class DownloadsPathProviderPlugin implements FlutterPlugin, MethodCallHandler {
 
     @Override
-    public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
+    public void onAttachedToEngine(FlutterPluginBinding binding) {
         pluginRegisterWith(binding.getBinaryMessenger());
     }
 
     @Override
-    public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
+    public void onDetachedFromEngine(FlutterPluginBinding binding) {
         // TODO: your plugin is no longer attached to a Flutter experience.
     }
 
